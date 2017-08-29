@@ -19,26 +19,26 @@
       {{e | json}}
         <div class="box">
             <div class="ui link cards">
-                <div class="card" v-for="i in result" @click="page">
-                    <div class="image">
-                        <img :src="i.images[0].source">
-                    </div>
-                    <div class="content">
-                        <div class="header">{{i.from.name}}</div>
-                        <div class="meta">
-                            <a>Network</a>
-                        </div>
-                        <div class="description">
-                            {{i.name}}
-                        </div>
-                    </div>
-                    <div class="extra content">
-                        <span class="right floated">
-                          {{i.created_time.substring(0,10)}} Time
-                          {{i.created_time.substring(11,19)}}
-                        </span>
-                    </div>
-                </div>
+              <div class="card" v-for="i in result" @click="page" >
+                  <div class="image">
+                      <img src="{{i.full_picture}}" alt="">
+                  </div>
+                  <div class="content">
+                      <div class="header">{{i.from.name}}</div>
+                      <div class="meta">
+                          <a>Network</a>
+                      </div>
+                      <div class="description">
+                          {{i.name}}
+                      </div>
+                  </div>
+                  <div class="extra content">
+                      <span class="right floated">
+                        {{i.created_time.substring(0,10)}} Time
+                        {{i.created_time.substring(11,19)}}
+                      </span>
+                  </div>
+              </div>
             </div>
         </div>
     </div>
