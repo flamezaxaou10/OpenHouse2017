@@ -1,5 +1,5 @@
 var access_token = 'EAASIjnu3HS8BADme5rhMLYmH0mvKMHoniHgdSx4AbVVxjiIfXjOep4Kgo4lyIe2rUf5VX6kxuJ9xAj4ZAXrUcZCpomWGRy8OZClDZCzh3y9V7TQj9ydlbX2Na7vMTDBwBV4w08uluCkEhm32An8e7tI9SsUZC02irS6f1KVWkiwZDZD'
-var urla = 'https://graph.facebook.com/v2.10/NetworkKMUTNB?fields=albums%7Bphotos%7Bimages%2Ccreated_time%2Cname%7D%7D&limit=10&access_token='+access_token
+var urla = 'https://graph.facebook.com/v2.10/NetworkKMUTNB/feed?fields=full_picture%2Ccreated_time%2Cname%2Cpicture&limit=10&access_token='+access_token
 new Vue({
   el: '#app',
   data: {
