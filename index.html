@@ -19,7 +19,7 @@
       {{e | json}}
         <div class="box">
             <div class="ui link cards">
-              <div class="card" v-for="i in result" @click="page" >
+              <div id ="example" class="card" v-for="i in result" @click="page" v-if="true">
                   <div class="image">
                       <img src="{{i.full_picture}}" alt="">
                   </div>
